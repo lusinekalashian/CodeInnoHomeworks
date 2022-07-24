@@ -1,4 +1,5 @@
-const grid1 = [
+//sudoku
+/*const grid1 = [
     [".", ".", ".", "1", "4", ".", ".", "2", "."],
     [".", ".", "6", ".", ".", ".", ".", ".", "."],
     [".", ".", ".", ".", ".", ".", ".", ".", "."],
@@ -72,6 +73,40 @@ function solution(grid) {
 
     return true;
 }
-
 console.log(solution(grid1));
 console.log(solution(grid2));
+*/
+//array merge
+/*
+const arr1 = [2,4,5,8,9];
+const arr2 = [1,3,7,10,11];
+
+
+function mergeArr(arr1,arr2,i = 0,j = 0,newArr = []){
+    if (i === arr1.length){
+        const arr = arr2.slice(j, arr2.length)
+        newArr = [
+            ...newArr,
+            ...arr
+        ]
+        return newArr;
+    }
+    if (j === arr2.length){
+        const arr = arr1.slice(i, arr1.length)
+        newArr = [
+            ...newArr,
+            ...arr
+        ]
+        return newArr;
+    }
+    if (arr1[i] <= arr2[j]){
+        newArr.push(arr1[i]);
+        return mergeArr(arr1,arr2,++i,j,newArr);
+    }else {
+        newArr.push(arr2[j]);
+        return mergeArr(arr1,arr2,i,++j,newArr);
+    }
+
+}
+
+console.log(mergeArr(arr1,arr2));*/
