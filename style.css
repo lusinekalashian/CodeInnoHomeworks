@@ -1,0 +1,11 @@
+.person {
+    height: 160px;
+    background: none repeat scroll 0 0 #B0C4DE;
+    color: #000000;
+    float: left;
+    padding: 10px;
+    position: relative;
+    width: 130px;
+    border-style: inset;
+}
+
